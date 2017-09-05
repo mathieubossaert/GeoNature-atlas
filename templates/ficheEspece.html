@@ -411,14 +411,14 @@
                                 {% if taxonDescription.milieu == None %}
                                     Non renseigné pour le moment
                                 {% else %}
-                                {{taxonDescription.milieu}}
+                                {{taxonDescription.milieu | safe}}
                                 {% endif %}
                         </div>  
                         <div id="chorologie" class="tab-pane fade">                                
                                 {% if taxonDescription.chorologie == None %}
                                     Non renseignée pour le moment
                                 {% else %}
-                                    {{taxonDescription.chorologie}}
+                                    {{taxonDescription.chorologie | safe}}
                                 {% endif %}
                         </div>
                         <div id="synonymes" class="tab-pane fade">
